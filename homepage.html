@@ -17,9 +17,9 @@
     <div id="wrapper" class="d-flex">
       <!-- Vertical Navbar(sidebar) -->
       <div id="navbar" class="w-25">
-        <div class="menu-nav" style="height: 50%">
+        <div class="menu-nav">
           <div id="logo">
-              <img src="assets/spotify.png" width="135px" height="45px" alt="Spotify logo">
+              <img src="assets/spotify.png" width="135px" height="40px" alt="Spotify logo">
           </div>
           <div class="links-nav">
               <a href="homepage.html">
@@ -41,7 +41,7 @@
               <img src="assets/creat-playlist.png" width="22px" height="22px" alt="Create playlist">
               <p>Create Playlist</p></a>  
           </div>
-          <div class="links-nav">
+          <div class="links-nav mb-2">
             <a href="artist.html">
                 <img src="assets/liked-song.png" width="24px" height="24px" alt="Artist page">
                 <p>Liked Songs</p></a> 
@@ -69,22 +69,28 @@
         <div class="container">
             <div class="row">
                 <nav id="horizontal-nav" class="navbar navbar-expand-lg sticky-top" onscroll="showMenu()">
-                  <a href="#" id="lessThan" class="previous round ml-3">&#8249;</a>
-                  <a href="#" id="greaterThan" class="next round">&#8250;</a> 
-                  <div class="dropdown">
-                      <button class="btn btn-user btn-sm dropdown-toggle justify-content-end mt-2" type="button"
-                      id="dropdownMenuButton1" data-toggle="dropdown" style="border-radius: 2rem;" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                        <img src="covers/Recently-played/le-bask.jpg" height="30px" alt="" style="border-radius: 2rem;">
-                         <span id="username1"></span>
-                      </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Account</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="start.html">Log out</a></li>
-                        </ul>
-                   </div>
-                </nav>
+                        <a href="#" id="lessThan" class="previous round ml-3">&#8249;</a>
+                        <a href="#" id="greaterThan" class="next round">&#8250;</a> 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"></li>
+                        <li class="nav-item"></li>
+                      </ul>
+                      <div class="dropdown">
+                        <button class="btn btn-user btn-sm dropdown-toggle justify-content-end mt-2 mr-auto" type="button"
+                        id="dropdownMenuButton1" data-toggle="dropdown" style="border-radius: 2rem;" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                          <img src="covers/Recently-played/le-bask.jpg" height="30px" alt="" style="border-radius: 2rem;">
+                           <span id="username1"></span>
+                        </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Account</a></li>
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="start.html">Log out</a></li>
+                          </ul>
+                     </div>
+                    </div>
+                  </nav>
             </div>
 
                 <div class="row mb-2">
@@ -110,7 +116,55 @@
     </div>
 </div>
 
-<footer></footer>
+<footer>
+    <div class="container-fluid">
+        <div id="footer-content" class="row d-flex">
+          <div class="songInfo col-3 d-none d-lg-flex">
+            <div class="box_image mr-2"><img src="assets/logo.ico" alt="..." width="50px" height="50px"></div>
+            <a href="#"><span class="box_title">..Song name<br><span>Artist name</span> </span></a>
+            <div><i class="far fa-heart ml-4 mr-2"></i></div>
+            <div><img src="assets/monitor.png" width="16px" height="18px"></div>
+          </div> 
+          <div id="play-buttons col-12 col-lg-6 d-flex">
+            <div class="row d-flex">
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                      <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                    </svg>
+                    <i class="fas fa fa-step-backward ml-1" id="previous" aria-hidden="true"></i>
+                    <img src="./assets/play-button.png" alt="..." class="mx-2" id="masterPlay" aria-hidden="true" onclick="pausePlay()">
+                    <i class="fas fa fa-step-forward ml-1" id="next" aria-hidden="true"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                      <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                      <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                    </svg>
+                      
+                  </div>
+                  <div>
+                      <input type="range" name="range" id="myProgressBar" class="bg-secondary" min="0" value="0" max="100">
+                  </div>
+            </div>
+          </div>
+          <div class="icons1 col-3 d-none d-md-flex">
+            <div class="d-none d-lg-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-text-indent-left" id="play-list-small-icon" viewBox="0 0 16 16">
+                  <path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm.646 2.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L4.293 8 2.646 6.354a.5.5 0 0 1 0-.708zM7 6.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <img src="assets/devices.png" alt="..." width="20px" height="20px" class="mx-1">
+            </div>
+            <div id="audio">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+              </svg>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+          </div>
+        </div>
+      </div>
+    
+</footer>
 
 
 
