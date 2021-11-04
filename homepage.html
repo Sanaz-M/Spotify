@@ -64,12 +64,13 @@
      </div>
 
 
+
     <!-- main section -->
     <div id="content" class="h-100 overflow-auto">
         <div class="container">
-            <div class="row">
-                <nav id="horizontal-nav" class="navbar navbar-expand-lg sticky-top" onscroll="showMenu()">
-                        <a href="#" id="lessThan" class="previous round ml-3">&#8249;</a>
+            <div class="row mb-5">
+                <nav id="horizontal-nav" class="navbar navbar-expand-lg sticky-top ml-2" onscroll="showMenu()">
+                        <a href="#" id="lessThan" class="previous round mr-1">&#8249;</a>
                         <a href="#" id="greaterThan" class="next round">&#8250;</a> 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
@@ -125,15 +126,15 @@
             <div><i class="far fa-heart ml-4 mr-2"></i></div>
             <div><img src="assets/monitor.png" width="16px" height="18px"></div>
           </div> 
-          <div id="play-buttons col-12 col-lg-6 d-flex">
+          <div id="play-buttons col-8 col-lg-6 d-flex">
             <div class="row d-flex">
-                <div class="icons">
+                <div class="icons d-flex justify-content-center align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
                       <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
                     </svg>
                     <i class="fas fa fa-step-backward ml-1" id="previous" aria-hidden="true"></i>
-                    <img src="./assets/play-button.png" alt="..." class="mx-2" id="masterPlay" aria-hidden="true" onclick="pausePlay()">
+                    <img src="./assets/play-button.png" alt="..." width="35px" height="35px" class="mx-2" id="masterPlay" aria-hidden="true" onclick="pausePlay()">
                     <i class="fas fa fa-step-forward ml-1" id="next" aria-hidden="true"></i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
                       <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>

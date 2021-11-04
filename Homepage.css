@@ -146,7 +146,7 @@ hr{
 }
 
 .container{
-    max-width: 1250px;
+    max-width: 1240px;
 }
 
 
@@ -155,8 +155,8 @@ hr{
     background-color: transparent;
     width: 100%;
     padding-left: 0;
+    justify-content: flex-start;
 }
-
 
 /* .blue{
     position:fixed;
@@ -207,11 +207,6 @@ hr{
 .dropdown-toggle::after{
     margin-left: 4.255rem;
 }
-
-
-/* .dropdown {
-    margin-left: 920px;
-} */
 
 .dropdown-menu {
     background: rgb(18, 18, 16);
@@ -269,15 +264,12 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    transform: 0.4s;
 }
 
 .songInfo i.far{
     opacity: 0.5;
     font-size: 14px;
-}
-
-footer #myProgressBar .icons{
-    justify-content: center;
 }
 
 #span-footer{
@@ -326,3 +318,4 @@ input.slider{
     opacity: 0.8;
     align-items: center;
 }
+
