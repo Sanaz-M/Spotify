@@ -8,21 +8,20 @@ font-family: 'Gotham Book', sans-serif;
 font-family: 'Gotham Ultra', sans-serif; */
 
 body{
-    background: rgb(18,18,18);
-    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(43,43,43,1) 50%, rgba(68,68,68,1) 100%);
-    color: #ececec;
+    color: #9b9595;
+    background-color: #151727;
 }
 
 #wrapper {
     height: calc(100vh - 90px);
 }
 
-/* vertical navbar */
+/* .......... vertical navbar ............ */
 #navbar {
     display: inline-block;
-    background-color: #000000;
-    border: 1px solid #000000;
-    border-radius: 3px;
+    background-color: #02040e;
+    border: 1px solid #02040e;
+    border-radius: 1px;
     color: #f0f0f0;
     padding: 10px;
     min-width: 250px;
@@ -46,7 +45,7 @@ body{
     font-family: 'Gotham', sans-serif;
     font-weight: 700;
     color: #f0f0f0;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .links-nav:hover{
@@ -87,7 +86,7 @@ hr{
 }
 
 .links-small-nav{
-    font-weight: 550; 
+    font-weight: 400; 
     opacity: 0.7;
     margin-left: 7px;
     white-space: nowrap;
@@ -140,7 +139,7 @@ hr{
 }
 
 
-/* main:container and cards */
+/* .......... main:container and cards ............ */
 #content{
     width: 100%!important;
 }
@@ -150,7 +149,8 @@ hr{
 }
 
 
-/* navbar */
+
+/*........ navbar ........ */
 .navbar{
     background-color: transparent;
     width: 100%;
@@ -169,37 +169,36 @@ hr{
 .navbar > a {
     text-decoration: none;
     display: inline-block;
-    padding: 4px 16px;
+    padding: 4px 8px;
     margin-right: 3px;
     border-radius: 15px;
     color: #ececec;
     transition-duration: 0.2s;
-    background-color: rgba(73, 37, 37, 0.801);
+    background-color: #000000;
+    opacity: 0.8;
 }
   
 .navbar a:hover {
-    background-color: rgb(112, 75, 75);
+    background-color: #57596b;
 }
 
 .btn-user {
-    background: rgb(63, 63, 59);
-    background: linear-gradient(
-      0deg,
-      rgb(136, 37, 37) 0%,
-      rgb(63, 3, 9) 58%,
-      rgb(63, 37, 40) 100%
-    );
+    background: #000000;
     color: #e0dbdb !important;
     min-width: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
   
 .btn-user:hover {
     background: rgb(18, 18, 16);
     background: linear-gradient(
       0deg,
-      rgba(242, 152, 245, 0.555) 0%,
-      rgb(109, 6, 49) 58%,
-      rgba(49, 1, 29, 0.342) 100%
+      #57596b 0%,
+      #1f223a 58%,
+      #2e3147 100%
     );
     color: #e0dbdb !important;
 }
@@ -211,13 +210,18 @@ hr{
 .dropdown-menu {
     background: rgb(18, 18, 16);
     background: linear-gradient(
-        0deg,
-        rgba(56, 3, 3, 0.555) 0%,
-        rgb(0, 0, 0) 58%,
-        rgba(49, 1, 7, 0.342) 100%
-      );
+      0deg,
+      #57596b 0%,
+      #1f223a 58%,
+      #2e3147 100%
+    );
 }
-  
+
+#username1{
+   display: flex;
+   justify-content: center;
+}
+
 .dropdown-menu a {
     color: #e0dbdb;
 }
@@ -233,12 +237,20 @@ hr{
     color: #e0dbdb;
 }
 
+#lessThan > img{
+    margin-bottom: 3px;
+}
+
+#greaterThan > img{
+    margin-bottom: 3px;
+}
+
 .round {
     border-radius: 50%;
 }
 
 
-/* Footer (play) */
+/* ............ Footer (play) ............. */
 footer {
     display: flex;
     flex-direction: row;
@@ -248,7 +260,7 @@ footer {
     left: 0;
     right: 0;
     justify-content: space-around;
-    background: rgb(37, 37, 37);
+    background: #0b0c17;
     align-items: center;
 }
 
